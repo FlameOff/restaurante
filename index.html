@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacheco's</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="css/logopachecos.png">
+    <script src="js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="meusite" href="https://github.com/FlameOff">PACHECO</a>
+            <ul class="nav-list">
+                <li><a href="">Sobre</a></li>
+                <li><a id="botao" href="#restaurant">Comidas</a></li>
+                <li><a href="">Surpresa</a></li>
+            </ul>
+        </nav>
+        <div class="principio">
+            <div class="cx">
+                <div>
+                    <h1>PACHECO</h1>
+                    <h1>RESTAURANT</h1>
+                </div>
+                <img src="css/logopachecos.png" alt="logopachecos" width="250px" height="250px">
+            </div>
+        </div>
+        
+    </header>
+    <main>
+        <div id="restaurant">
+            
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <div>
+                <h3>Seja bem vindo ao Pacheco's</h3>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    const botao = document.querySelector("#botao")
+
+    botao.addEventListener("click", () => {
+        window.scroll({top: window.outerHeight, behavior:"smooth"})
+    })
+</script>
+</html>
