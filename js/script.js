@@ -5,15 +5,22 @@ const getId = (id, lista) => lista.filter(elem => elem.id == id)
 const carregaRestaurant = (restaurant, lista) => {
 
 
-
     let resp = `
         <div class="restaurant">
-            <img src="" alt="${restaurant.name}" width="200px" height="200px">
-            <div class="pricebola"><p>R${restaurant.price}<p></div><h3>${restaurant.name}</h3>
+        <h3>${restaurant.name}</h3>
+            <img width="300px" height="200px" src="https://rafaelescalfoni.github.io/desenv_web/restaurante/${restaurant.photo}" alt="${restaurant.name}"
+            <div class="ballPrice">
+                <p>R${restaurant.price}<p>
+            </div>
         </div>`
     const divResp = document.querySelector("#restaurant")
     divResp.innerHTML += resp
+    
 }
+
+let contaAPagar = document.querySelector("contaComida")
+
+
 const xhttp = new XMLHttpRequest()
 const url = "https://rafaelescalfoni.github.io/desenv_web/restaurante/items.json"
 

@@ -81,28 +81,52 @@ li:hover{
 }
 main{
     width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
     height:max-content;
     padding:100px 0px;
     background-color: brown;
 }
+
+/*DIV DAS COMIDAS */
 .restaurant{
-    background-color: black;
-    width: 300px;
+    background-color: #681212;
+    display: grid;
+    grid-template-columns: auto;
+    width:300px;
     padding: 30px;
+    align-items: center;
     border-radius: 20px;
     color: aliceblue;
     height: max-content;
+    margin: 10px;
+}
+.restaurant .ballprice{
+    align-items: self-end;
+    justify-content: left;
 }
 #restaurant{
-    width: max-content;
+    width:100%;
     height: max-content;
     display: grid;
-    grid: 1fr 1fr 1fr;
-    justify-items: center;
+    grid-column-gap:20px ;
+    grid-row-gap:50px ;
+    grid-template-columns: auto auto;
+    overflow: auto;
+    align-items: center;
     margin: 10px 0px;
 }
+/*STORAGE*/
+.contaComida{
+    width: 500px;
+    padding: 10px;
+    color: aliceblue;
+    border-radius: 10px;
+    height: max-content;
+    background-color: #681212;
+}
 
-
+/*DIV DA PARTE DEBAIXO DO SITE */
 footer{
     width: 100%;
     height: 300px;
